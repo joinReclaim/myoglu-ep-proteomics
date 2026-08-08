@@ -1,16 +1,19 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the article below."
+message: "If you use this code, please cite it as below."
 title: "Analysis code: plasma extracellular particle-enriched proteome after exercise training"
 authors:
   - family-names: "Lee-Ødegård"
     given-names: "Sindre"
 license: MIT
 repository-code: "https://github.com/joinReclaim/myoglu-ep-proteomics"
-preferred-citation:
-  type: article
-  title: "[manuscript title]"
-  authors:
-    - family-names: "Lee-Ødegård"
-      given-names: "Sindre"
-  journal: "Cardiovascular Diabetology"
-  year: 2026
+abstract: >-
+  Analysis and figure code for a study of the plasma extracellular
+  particle-enriched proteome before and after 12 weeks of combined endurance
+  and resistance training (MyoGlu). Includes the numeric source data behind
+  the figure panels. Contains no clinical phenotype data.
+keywords:
+  - exercise
+  - extracellular particles
+  - plasma proteomics
+  - dia-PASEF
+# The article citation will be added here once the manuscript is published.
