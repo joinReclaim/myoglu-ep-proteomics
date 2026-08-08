@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "Analysis code: plasma extracellular particle-enriched proteome after exercise training"
+authors:
+  - family-names: "Lee-Ødegård"
+    given-names: "Sindre"
+license: MIT
+preferred-citation:
+  type: article
+  title: "[manuscript title]"
+  authors:
+    - family-names: "Lee-Ødegård"
+      given-names: "Sindre"
+  journal: "Cardiovascular Diabetology"
+  year: 2026

@@ -1,0 +1,193 @@
+subject_id,timepoint,group,block,comp1,comp2
+MyoGlu_001,Baseline,Control,Plasma EP proteins,0.762122943898655,0.748697494561825
+MyoGlu_001,Post-training,Control,Plasma EP proteins,-1.14735650337774,0.935394397311611
+MyoGlu_004,Baseline,Overweight,Plasma EP proteins,0.90342136272994,-0.292740621289038
+MyoGlu_004,Post-training,Overweight,Plasma EP proteins,-0.0341517979940972,-0.407882920737117
+MyoGlu_008,Baseline,Control,Plasma EP proteins,0.751315023762466,-0.753242276174887
+MyoGlu_008,Post-training,Control,Plasma EP proteins,1.6380533462474,0.332365560764289
+MyoGlu_013,Baseline,Control,Plasma EP proteins,-0.399020303190732,-4.17918792047075
+MyoGlu_013,Post-training,Control,Plasma EP proteins,-2.39117049169942,-1.33418605268004
+MyoGlu_021,Baseline,Overweight,Plasma EP proteins,0.891336703985285,-0.937317110746851
+MyoGlu_021,Post-training,Overweight,Plasma EP proteins,-1.88855632111344,2.04263482194319
+MyoGlu_053,Baseline,Overweight,Plasma EP proteins,2.82398825327512,0.429426928795934
+MyoGlu_053,Post-training,Overweight,Plasma EP proteins,-2.35187771600648,1.52577371378527
+MyoGlu_055,Baseline,Overweight,Plasma EP proteins,2.36970751257195,1.60914908147316
+MyoGlu_055,Post-training,Overweight,Plasma EP proteins,-2.42310957551626,0.374257629559078
+MyoGlu_061,Baseline,Overweight,Plasma EP proteins,0.578999000085787,-0.614914972347468
+MyoGlu_061,Post-training,Overweight,Plasma EP proteins,-0.154492428767144,0.458224895143158
+MyoGlu_062,Baseline,Overweight,Plasma EP proteins,3.76635841930839,0.78385020006786
+MyoGlu_062,Post-training,Overweight,Plasma EP proteins,0.0851374061869627,1.13282140615287
+MyoGlu_067,Baseline,Overweight,Plasma EP proteins,3.38939051136935,1.42513547971729
+MyoGlu_067,Post-training,Overweight,Plasma EP proteins,-0.498743925095624,1.03395843129109
+MyoGlu_070,Baseline,Control,Plasma EP proteins,0.0149954575463351,-0.0861133719983671
+MyoGlu_070,Post-training,Control,Plasma EP proteins,-1.65954943018227,0.667702473457578
+MyoGlu_071,Baseline,Control,Plasma EP proteins,0.539487446891586,0.510523524197821
+MyoGlu_071,Post-training,Control,Plasma EP proteins,-1.93085020588014,-0.213002840446982
+MyoGlu_072,Baseline,Control,Plasma EP proteins,0.37403855628849,-0.874631382810083
+MyoGlu_072,Post-training,Control,Plasma EP proteins,-0.882705900113662,-0.0630840869138753
+MyoGlu_073,Baseline,Overweight,Plasma EP proteins,-0.322714125012327,-0.626883882445063
+MyoGlu_073,Post-training,Overweight,Plasma EP proteins,-5.70313729153536,0.283106335191369
+MyoGlu_075,Baseline,Control,Plasma EP proteins,2.85894893934965,-0.373436834766389
+MyoGlu_075,Post-training,Control,Plasma EP proteins,-2.10272173235589,0.932253171141273
+MyoGlu_076,Baseline,Overweight,Plasma EP proteins,1.19314528118823,0.876044333223877
+MyoGlu_076,Post-training,Overweight,Plasma EP proteins,-3.13210215366259,2.40772120489446
+MyoGlu_077,Baseline,Overweight,Plasma EP proteins,1.88234687681638,-1.72017138148911
+MyoGlu_077,Post-training,Overweight,Plasma EP proteins,-1.10016159804309,1.31543877371558
+MyoGlu_079,Baseline,Overweight,Plasma EP proteins,1.99656957846586,0.705083550529909
+MyoGlu_079,Post-training,Overweight,Plasma EP proteins,1.46758617069085,1.47141153797308
+MyoGlu_081,Baseline,Control,Plasma EP proteins,2.1869672504544,-0.319393790704853
+MyoGlu_081,Post-training,Control,Plasma EP proteins,-2.55672904039027,-0.0796391086720177
+MyoGlu_082,Baseline,Control,Plasma EP proteins,3.58479295391821,-1.05574666069851
+MyoGlu_082,Post-training,Control,Plasma EP proteins,-0.780612601696331,1.24042348303751
+MyoGlu_083,Baseline,Control,Plasma EP proteins,1.27047113358036,-1.01153288697524
+MyoGlu_083,Post-training,Control,Plasma EP proteins,1.66130552053821,0.957266506935031
+MyoGlu_086,Baseline,Control,Plasma EP proteins,3.44896478101457,-0.729215906453715
+MyoGlu_086,Post-training,Control,Plasma EP proteins,-3.60584903218353,-0.364502085331514
+MyoGlu_087,Baseline,Control,Plasma EP proteins,-1.87610878738639,-3.80838850807507
+MyoGlu_087,Post-training,Control,Plasma EP proteins,1.28927682189246,-1.49593924479807
+MyoGlu_088,Baseline,Control,Plasma EP proteins,-2.07028344059575,-1.46178291844627
+MyoGlu_088,Post-training,Control,Plasma EP proteins,-2.71672285025841,-1.39572816939314
+MyoGlu_001,Baseline,Control,Serum proteins,0.245822974452532,-0.354846085627873
+MyoGlu_001,Post-training,Control,Serum proteins,-0.576544509812585,1.43930411667831
+MyoGlu_004,Baseline,Overweight,Serum proteins,0.654782146014717,-0.871181124766302
+MyoGlu_004,Post-training,Overweight,Serum proteins,-2.12463047921948,0.300854372845888
+MyoGlu_008,Baseline,Control,Serum proteins,0.537912111040719,-0.897344807718014
+MyoGlu_008,Post-training,Control,Serum proteins,0.246588893376478,0.151263567983761
+MyoGlu_013,Baseline,Control,Serum proteins,0.481943180080009,-2.20293086970243
+MyoGlu_013,Post-training,Control,Serum proteins,-1.41608690609618,-1.63847972464318
+MyoGlu_021,Baseline,Overweight,Serum proteins,0.532364388389618,0.299436892616458
+MyoGlu_021,Post-training,Overweight,Serum proteins,-0.476630706490761,1.45900128005444
+MyoGlu_053,Baseline,Overweight,Serum proteins,1.34929235495285,-0.241360193185522
+MyoGlu_053,Post-training,Overweight,Serum proteins,-0.995333187414658,1.60919767357707
+MyoGlu_055,Baseline,Overweight,Serum proteins,2.93877956130538,2.24111356942969
+MyoGlu_055,Post-training,Overweight,Serum proteins,0.876040121886278,1.23172005798627
+MyoGlu_061,Baseline,Overweight,Serum proteins,1.85007784346783,0.637418533938042
+MyoGlu_061,Post-training,Overweight,Serum proteins,0.211862829690807,2.67537334085392
+MyoGlu_062,Baseline,Overweight,Serum proteins,0.480181881688526,1.42526449607736
+MyoGlu_062,Post-training,Overweight,Serum proteins,-0.362298091461324,1.87458764013748
+MyoGlu_067,Baseline,Overweight,Serum proteins,1.1148265756726,1.39972146090191
+MyoGlu_067,Post-training,Overweight,Serum proteins,-0.665052163256226,1.9627567849049
+MyoGlu_070,Baseline,Control,Serum proteins,1.16605403218455,-0.738895752268535
+MyoGlu_070,Post-training,Control,Serum proteins,-0.580424375834309,-0.200424236971092
+MyoGlu_071,Baseline,Control,Serum proteins,-0.358387102476338,-1.0373443593377
+MyoGlu_071,Post-training,Control,Serum proteins,-3.24876061269049,0.639548433861021
+MyoGlu_072,Baseline,Control,Serum proteins,0.592982966680932,-2.47424710249966
+MyoGlu_072,Post-training,Control,Serum proteins,-0.34361979714604,-0.852720503506587
+MyoGlu_073,Baseline,Overweight,Serum proteins,0.655496371758117,-1.95441699312069
+MyoGlu_073,Post-training,Overweight,Serum proteins,-2.90217672863899,-1.41861231479343
+MyoGlu_075,Baseline,Control,Serum proteins,1.80952502755458,-0.14796686495701
+MyoGlu_075,Post-training,Control,Serum proteins,1.63641427015729,0.30694935332129
+MyoGlu_076,Baseline,Overweight,Serum proteins,1.11195817077706,-0.688715078416346
+MyoGlu_076,Post-training,Overweight,Serum proteins,-0.594559953607026,1.44028297745206
+MyoGlu_077,Baseline,Overweight,Serum proteins,0.490069936479808,-1.10587059595517
+MyoGlu_077,Post-training,Overweight,Serum proteins,-2.66538576377942,-0.109969476793707
+MyoGlu_079,Baseline,Overweight,Serum proteins,-0.0312681783333511,1.89009805149787
+MyoGlu_079,Post-training,Overweight,Serum proteins,-0.318577984199045,3.60673613769882
+MyoGlu_081,Baseline,Control,Serum proteins,0.546005284613038,-3.01761711098704
+MyoGlu_081,Post-training,Control,Serum proteins,-2.9401829195983,-0.87168039264
+MyoGlu_082,Baseline,Control,Serum proteins,-0.180668148764292,-0.797548220710118
+MyoGlu_082,Post-training,Control,Serum proteins,-0.017835852515367,2.42251311139553
+MyoGlu_083,Baseline,Control,Serum proteins,0.900117553795956,-2.01194994577376
+MyoGlu_083,Post-training,Control,Serum proteins,-0.762398223499199,-0.563223929879304
+MyoGlu_086,Baseline,Control,Serum proteins,1.53358432691057,1.2559128695071
+MyoGlu_086,Post-training,Control,Serum proteins,-0.749037199304437,-1.16918863836561
+MyoGlu_087,Baseline,Control,Serum proteins,2.00050416806879,-2.52900613942417
+MyoGlu_087,Post-training,Control,Serum proteins,-1.14985000464283,-0.0329182488272636
+MyoGlu_088,Baseline,Control,Serum proteins,0.0715968155052246,-1.57982618594205
+MyoGlu_088,Post-training,Control,Serum proteins,-0.57507489772361,-0.760769825906618
+MyoGlu_001,Baseline,Control,Skeletal muscle mRNA,3.57018259692693,-0.614846156952113
+MyoGlu_001,Post-training,Control,Skeletal muscle mRNA,-3.56724497051524,0.311733109853101
+MyoGlu_004,Baseline,Overweight,Skeletal muscle mRNA,2.551250656903,0.263238813103502
+MyoGlu_004,Post-training,Overweight,Skeletal muscle mRNA,1.67677618277576,0.900624134384371
+MyoGlu_008,Baseline,Control,Skeletal muscle mRNA,2.443272900645,0.0688026999567454
+MyoGlu_008,Post-training,Control,Skeletal muscle mRNA,-1.85233519544389,-0.297293071441758
+MyoGlu_013,Baseline,Control,Skeletal muscle mRNA,1.89340972354545,-3.80293897073779
+MyoGlu_013,Post-training,Control,Skeletal muscle mRNA,-3.73626481712166,-1.23759925429325
+MyoGlu_021,Baseline,Overweight,Skeletal muscle mRNA,3.00030728585679,1.33158528780294
+MyoGlu_021,Post-training,Overweight,Skeletal muscle mRNA,-2.28314907881664,1.07137019702159
+MyoGlu_053,Baseline,Overweight,Skeletal muscle mRNA,-0.874099387764263,-0.0754043683472913
+MyoGlu_053,Post-training,Overweight,Skeletal muscle mRNA,-2.97601793229153,0.512085524219193
+MyoGlu_055,Baseline,Overweight,Skeletal muscle mRNA,2.04772780293101,2.01147333496372
+MyoGlu_055,Post-training,Overweight,Skeletal muscle mRNA,-1.41861915974984,1.68539826292137
+MyoGlu_061,Baseline,Overweight,Skeletal muscle mRNA,1.71489848347393,1.74408093349261
+MyoGlu_061,Post-training,Overweight,Skeletal muscle mRNA,0.405232871024471,4.82873226993755
+MyoGlu_062,Baseline,Overweight,Skeletal muscle mRNA,0.887143265967698,0.847835853859877
+MyoGlu_062,Post-training,Overweight,Skeletal muscle mRNA,-2.53731949687286,1.00330425484114
+MyoGlu_067,Baseline,Overweight,Skeletal muscle mRNA,2.51260288078912,0.622703930600286
+MyoGlu_067,Post-training,Overweight,Skeletal muscle mRNA,-2.83528218741852,0.345832822556161
+MyoGlu_070,Baseline,Control,Skeletal muscle mRNA,2.08973093902323,-0.733866094556148
+MyoGlu_070,Post-training,Control,Skeletal muscle mRNA,-1.46877090151756,-0.224210961605381
+MyoGlu_071,Baseline,Control,Skeletal muscle mRNA,2.69451275552351,-0.288002611955951
+MyoGlu_071,Post-training,Control,Skeletal muscle mRNA,-1.80339826621097,-0.491341973685841
+MyoGlu_072,Baseline,Control,Skeletal muscle mRNA,2.1348143299115,-1.60470930156627
+MyoGlu_072,Post-training,Control,Skeletal muscle mRNA,-3.15488555075685,-0.133971562142102
+MyoGlu_073,Baseline,Overweight,Skeletal muscle mRNA,1.87570733218461,-0.835422139828436
+MyoGlu_073,Post-training,Overweight,Skeletal muscle mRNA,-1.40773652170776,1.09314626551651
+MyoGlu_075,Baseline,Control,Skeletal muscle mRNA,2.97723471373666,0.137920993273406
+MyoGlu_075,Post-training,Control,Skeletal muscle mRNA,-4.92841315748394,-0.482207651346579
+MyoGlu_076,Baseline,Overweight,Skeletal muscle mRNA,3.01080827866141,-0.431070289201314
+MyoGlu_076,Post-training,Overweight,Skeletal muscle mRNA,-1.34037181146706,0.888234633557055
+MyoGlu_077,Baseline,Overweight,Skeletal muscle mRNA,2.09750722442466,-2.07044237139361
+MyoGlu_077,Post-training,Overweight,Skeletal muscle mRNA,-2.79596759299196,-0.00965932423455509
+MyoGlu_079,Baseline,Overweight,Skeletal muscle mRNA,1.54259596074393,1.82501864282041
+MyoGlu_079,Post-training,Overweight,Skeletal muscle mRNA,-3.23495114011339,3.09811332139202
+MyoGlu_081,Baseline,Control,Skeletal muscle mRNA,2.20650303736734,-0.650260250442721
+MyoGlu_081,Post-training,Control,Skeletal muscle mRNA,-3.68685462893056,-3.19227002963986
+MyoGlu_082,Baseline,Control,Skeletal muscle mRNA,2.53340626114828,-0.950749459687067
+MyoGlu_082,Post-training,Control,Skeletal muscle mRNA,0.831264034400334,0.545092210526695
+MyoGlu_083,Baseline,Control,Skeletal muscle mRNA,4.18032988549243,-1.56914773007163
+MyoGlu_083,Post-training,Control,Skeletal muscle mRNA,-4.13856718298361,-2.57569985021853
+MyoGlu_086,Baseline,Control,Skeletal muscle mRNA,2.31745390004766,0.327387237730896
+MyoGlu_086,Post-training,Control,Skeletal muscle mRNA,-0.636476884222999,1.67914717502917
+MyoGlu_087,Baseline,Control,Skeletal muscle mRNA,2.42592952252476,-1.2057483325496
+MyoGlu_087,Post-training,Control,Skeletal muscle mRNA,-4.10506348920603,-0.895055869173184
+MyoGlu_088,Baseline,Control,Skeletal muscle mRNA,1.72799552364684,-0.972755374965863
+MyoGlu_088,Post-training,Control,Skeletal muscle mRNA,-2.56680899608913,-1.79818890932342
+MyoGlu_001,Baseline,Control,Adipose tissue mRNA,0.0190262671212927,0.0904067746750684
+MyoGlu_001,Post-training,Control,Adipose tissue mRNA,-0.975535511788307,1.02454719740286
+MyoGlu_004,Baseline,Overweight,Adipose tissue mRNA,-0.800239228313128,1.28225365629345
+MyoGlu_004,Post-training,Overweight,Adipose tissue mRNA,-2.16596623876739,2.42942138015501
+MyoGlu_008,Baseline,Control,Adipose tissue mRNA,2.32619148528884,-3.06800603673968
+MyoGlu_008,Post-training,Control,Adipose tissue mRNA,-1.71562222166789,-0.94898636624266
+MyoGlu_013,Baseline,Control,Adipose tissue mRNA,-1.22357857771927,-2.1322910696945
+MyoGlu_013,Post-training,Control,Adipose tissue mRNA,-0.495521715578765,-2.1189945854741
+MyoGlu_021,Baseline,Overweight,Adipose tissue mRNA,0.772272280590466,0.239371233463704
+MyoGlu_021,Post-training,Overweight,Adipose tissue mRNA,-1.30323262189465,0.927090620046107
+MyoGlu_053,Baseline,Overweight,Adipose tissue mRNA,1.39685927613166,0.699912980559668
+MyoGlu_053,Post-training,Overweight,Adipose tissue mRNA,0.0832103291949276,2.45446114121357
+MyoGlu_055,Baseline,Overweight,Adipose tissue mRNA,2.11945833152294,2.44150041711285
+MyoGlu_055,Post-training,Overweight,Adipose tissue mRNA,1.54915814102313,2.17528157399524
+MyoGlu_061,Baseline,Overweight,Adipose tissue mRNA,2.19181674804099,0.080666883415564
+MyoGlu_061,Post-training,Overweight,Adipose tissue mRNA,0.959718667833143,1.21853928455582
+MyoGlu_062,Baseline,Overweight,Adipose tissue mRNA,0.889935177129282,0.0517081901760457
+MyoGlu_062,Post-training,Overweight,Adipose tissue mRNA,-1.59980084177493,1.64356514633458
+MyoGlu_067,Baseline,Overweight,Adipose tissue mRNA,1.23271306593313,2.81617558196372
+MyoGlu_067,Post-training,Overweight,Adipose tissue mRNA,0.731459750549796,0.528405052445558
+MyoGlu_070,Baseline,Control,Adipose tissue mRNA,0.626865225456754,-0.433734227477335
+MyoGlu_070,Post-training,Control,Adipose tissue mRNA,-0.748393979344166,-0.585888012511322
+MyoGlu_071,Baseline,Control,Adipose tissue mRNA,0.205977196598035,-1.65763653415492
+MyoGlu_071,Post-training,Control,Adipose tissue mRNA,-1.29475777410937,-1.08585534176841
+MyoGlu_072,Baseline,Control,Adipose tissue mRNA,-0.0897130351604544,-0.693595285474119
+MyoGlu_072,Post-training,Control,Adipose tissue mRNA,-1.65840973733247,0.271082870229394
+MyoGlu_073,Baseline,Overweight,Adipose tissue mRNA,1.35432230693665,-1.09889354004246
+MyoGlu_073,Post-training,Overweight,Adipose tissue mRNA,-0.141517511885277,0.679997656681657
+MyoGlu_075,Baseline,Control,Adipose tissue mRNA,-1.56249850387165,0.100523523382397
+MyoGlu_075,Post-training,Control,Adipose tissue mRNA,-1.0981600318382,-0.787167505455822
+MyoGlu_076,Baseline,Overweight,Adipose tissue mRNA,1.93286221040468,-2.18551424278015
+MyoGlu_076,Post-training,Overweight,Adipose tissue mRNA,-0.272340492803162,-0.443160099403211
+MyoGlu_077,Baseline,Overweight,Adipose tissue mRNA,1.22386396134565,-0.463733667401551
+MyoGlu_077,Post-training,Overweight,Adipose tissue mRNA,-0.565090416663147,2.91838511498107
+MyoGlu_079,Baseline,Overweight,Adipose tissue mRNA,2.9681287030053,0.78337043599538
+MyoGlu_079,Post-training,Overweight,Adipose tissue mRNA,1.18772487717946,3.81639675328543
+MyoGlu_081,Baseline,Control,Adipose tissue mRNA,0.588100573789799,-1.41661002186538
+MyoGlu_081,Post-training,Control,Adipose tissue mRNA,-0.900013041889089,-0.432734273501785
+MyoGlu_082,Baseline,Control,Adipose tissue mRNA,0.624163075488168,-1.75570007509362
+MyoGlu_082,Post-training,Control,Adipose tissue mRNA,-2.18041666126451,0.747414899415453
+MyoGlu_083,Baseline,Control,Adipose tissue mRNA,0.158057595289738,-1.7317875204506
+MyoGlu_083,Post-training,Control,Adipose tissue mRNA,-1.92338212258681,-0.561718548682107
+MyoGlu_086,Baseline,Control,Adipose tissue mRNA,0.228364424955525,-1.73841691984473
+MyoGlu_086,Post-training,Control,Adipose tissue mRNA,-0.206564760644536,-0.82521616839848
+MyoGlu_087,Baseline,Control,Adipose tissue mRNA,-0.974842662767332,-1.85598249186463
+MyoGlu_087,Post-training,Control,Adipose tissue mRNA,-1.62656168860073,-0.736205442481655
+MyoGlu_088,Baseline,Control,Adipose tissue mRNA,1.11827062261772,-1.79929174788922
+MyoGlu_088,Post-training,Control,Adipose tissue mRNA,-0.966360915161901,1.13664135691291

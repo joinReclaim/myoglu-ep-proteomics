@@ -1,0 +1,26 @@
+analysis,source,Description,GeneRatio,BgRatio,FoldEnrichment,q,Count
+All responders,GO BP,cell adhesion,48/126,289/1487,2,0.000465,48
+All responders,GO BP,cell junction assembly,19/126,88/1487,2.5,0.0386,19
+All responders,GO BP,cell surface receptor signaling pathway,44/126,312/1487,1.7,0.0386,44
+All responders,GO BP,extracellular matrix organization,14/126,57/1487,2.9,0.0386,14
+All responders,GO BP,extracellular structure organization,14/126,57/1487,2.9,0.0386,14
+All responders,GO CC,extracellular matrix,32/127,158/1516,2.4,7.14e-05,32
+All responders,GO CC,external encapsulating structure,32/127,159/1516,2.4,7.14e-05,32
+All responders,GO CC,collagen-containing extracellular matrix,25/127,140/1516,2.1,0.00975,25
+All responders,GO CC,cell surface,24/127,136/1516,2.1,0.0125,24
+Increased,GO BP,cell adhesion,33/75,289/1487,2.3,0.000722,33
+Increased,GO BP,extracellular matrix organization,13/75,57/1487,4.5,0.000722,13
+Increased,GO BP,extracellular structure organization,13/75,57/1487,4.5,0.000722,13
+Increased,GO BP,external encapsulating structure organization,13/75,57/1487,4.5,0.000722,13
+Increased,GO BP,animal organ morphogenesis,14/75,76/1487,3.7,0.00336,14
+Increased,GO CC,extracellular matrix,30/76,158/1516,3.8,6.04e-10,30
+Increased,GO CC,external encapsulating structure,30/76,159/1516,3.8,6.04e-10,30
+Increased,GO CC,collagen-containing extracellular matrix,24/76,140/1516,3.4,8.6e-07,24
+Increased,GO CC,cell surface,18/76,136/1516,2.6,0.00298,18
+Increased,GO CC,apical part of cell,8/76,45/1516,3.5,0.049,8
+Increased,KEGG,Protein digestion and absorption,5/40,11/963,10.9,0.0034,5
+Increased,KEGG,ECM-receptor interaction,7/40,33/963,5.1,0.011,7
+Increased,KEGG,Integrin signaling,8/40,55/963,3.5,0.0382,8
+Decreased,GO BP,positive regulation of mitotic cell cycle,5/51,12/1487,12.1,0.0398,5
+Decreased,GO BP,microtubule-based process,12/51,100/1487,3.5,0.046,12
+Decreased,GO BP,organelle fission,8/51,45/1487,5.2,0.046,8

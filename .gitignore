@@ -1,0 +1,9 @@
+# cache built by R1_00_setup.R — regenerate, do not commit (large)
+review_round_1/02_output/*.rds
+# input data placed here by the user, obtained from ProteomeXchange
+pg.report_Frode_plasma.csv
+Frode_Norheim_sample_info.csv
+external/
+.Rhistory
+.RData
+.Rproj.user/
