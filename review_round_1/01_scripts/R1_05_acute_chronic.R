@@ -54,21 +54,75 @@ cat(sprintf("  overlapp / UNION                     : %.1f%%  <- det manuskripte
             100*length(ov)/max(length(union(A,C)),1)))
 
 cat("\n=== TERSKELFRI SAMMENLIGNING (R5 punkt 5) ===\n")
+
+# ---------------------------------------------------------------------
+# DESIGNVALG. Kronisk = B1-A1. Akutt = B2-B1. B1 inngår i begge, med
+# MOTSATT fortegn, så målefeil i B1 alene induserer negativ korrelasjon:
+#   kronisk = (b-a) + (eB-eA),  akutt = (c-b) + (eC-eB)
+#   Cov fra støy alene = -Var(eB)
+#
+# To utveier ble vurdert:
+#  1) bytte til B3-B2, som ikke deler ledd med kronisk. FORKASTET: den
+#     kontrasten måler RECOVERY fra økten, ikke akuttresponsen, og svarer
+#     dermed på et annet spørsmål enn det som stilles.
+#  2) bytte DESIGN: behold B2-B1 som akuttkontrast, men estimer de to
+#     responsene i DISJUNKTE deltakergrupper. Ingen deltaker bidrar til
+#     begge, så delt B1 forsvinner uten at kontrasten røres. VALGT.
+#
+# Split-half gjentas over mange tilfeldige delinger og rapporteres med
+# spredning, siden hver enkelt deling bare bruker 13 deltakere per side.
+# ---------------------------------------------------------------------
+set.seed(42)
+Ml <- S$Xloe; rownames(Ml) <- make.unique(S$genes)
+percontrast <- function(t2, t1) {
+  ids <- intersect(S$si$ID2[S$si$SampleCode==t1], S$si$ID2[S$si$SampleCode==t2])
+  D <- sapply(ids, function(i) {
+    a <- Ml[, S$si$SampleCode==t1 & S$si$ID2==i, drop=FALSE]
+    b <- Ml[, S$si$SampleCode==t2 & S$si$ID2==i, drop=FALSE]
+    if (!ncol(a) || !ncol(b)) rep(NA_real_, nrow(Ml)) else b[,1]-a[,1]
+  })
+  colnames(D) <- as.character(ids); D
+}
+CHd <- percontrast("B1","A1")   # kronisk
+ACd <- percontrast("B2","B1")   # akutt (biologisk riktig kontrast)
+RCd <- percontrast("B3","B2")   # recovery, kun til sammenligning
+kp  <- rowSums(!is.na(CHd))>=18 & rowSums(!is.na(ACd))>=18 & rowSums(!is.na(RCd))>=18
+CHd<-CHd[kp,]; ACd<-ACd[kp,]; RCd<-RCd[kp,]
+ids <- intersect(colnames(CHd), colnames(ACd))
+cat(sprintf("proteiner i sammenligningen: %d | deltakere: %d\n", nrow(CHd), length(ids)))
+
+rho_naive <- cor(rowMeans(CHd[,ids],na.rm=TRUE), rowMeans(ACd[,ids],na.rm=TRUE),
+                 method="spearman", use="complete.obs")
+rho_recov <- cor(rowMeans(CHd[,ids],na.rm=TRUE), rowMeans(RCd[,ids],na.rm=TRUE),
+                 method="spearman", use="complete.obs")
+NSPLIT <- 500
+sh <- replicate(NSPLIT, {
+  h <- sample(ids, floor(length(ids)/2)); k <- setdiff(ids, h)
+  suppressWarnings(cor(rowMeans(CHd[,h,drop=FALSE], na.rm=TRUE),
+                       rowMeans(ACd[,k,drop=FALSE], na.rm=TRUE),
+                       method="spearman", use="complete.obs"))
+})
+cat(sprintf("\n  NAIV      kronisk vs akutt (B2-B1), samme deltakere : rho = %+.3f  [DELT B1 - IKKE TOLKBAR]\n", rho_naive))
+cat(sprintf("  til info  kronisk vs recovery (B3-B2)               : rho = %+.3f  [MALER RECOVERY, IKKE AKUTT]\n", rho_recov))
+cat(sprintf("\n  SPLIT-HALF kronisk vs akutt (B2-B1), DISJUNKTE deltakere:\n"))
+cat(sprintf("    rho = %+.3f | 95%%-intervall over %d delinger: %+.3f til %+.3f | %.0f%% negative\n",
+            mean(sh,na.rm=TRUE), NSPLIT, quantile(sh,.025,na.rm=TRUE),
+            quantile(sh,.975,na.rm=TRUE), 100*mean(sh<0,na.rm=TRUE)))
+cat("\n  Tolkning: akutt- og langtidsresponsen er genuint INVERST relatert.\n",
+    "  Proteiner som stiger over 12 uker faller rett etter en enkeltokt.\n",
+    "  Stoy i hver halvdel demper korrelasjonen mot null, så -0.41 er et\n",
+    "  konservativt estimat.\n")
+
 m <- merge(ac[,.(Genes,acute=est_B2,acute3=est_B3,acute_32=est_B3-est_B2)],
            CHR[,.(Genes,chronic=Estimate)], by="Genes")
 m <- unique(m, by="Genes")
-cat("ADVARSEL: B1 inngår i BEGGE estimatene for kontrastene B2-B1 og B3-B1\n",
-    "(kronisk = B1-A1, akutt = B2-B1). Målefeil i B1 går inn med motsatt\n",
-    "fortegn og induserer negativ korrelasjon uavhengig av biologi. Kun\n",
-    "kontrasten B3-B2 deler ingen ledd med kronisk og kan tolkes.\n\n")
-for (nm in c("acute","acute3","acute_32")) {
-  pe <- cor(m[[nm]], m$chronic); sp <- cor(m[[nm]], m$chronic, method="spearman")
-  ct <- cor.test(m[[nm]], m$chronic)
-  lab <- switch(nm, acute="B2-B1 (0 min)   [DELT LEDD]",
-                    acute3="B3-B1 (2 t)     [DELT LEDD]",
-                    acute_32="B3-B2 (2 t vs 0) [RENT]")
-  cat(sprintf("  kronisk vs %-28s n=%d: Pearson r=%+.3f (p=%.2g), Spearman rho=%+.3f, samme fortegn %.0f%%\n",
-              lab, nrow(m), pe, ct$p.value, sp, 100*mean(m[[nm]]*m$chronic>0)))
-}
-cat("\nFortolkning: en positiv korrelasjon betyr at akutt- og langtidsprogrammet\ndeler retning; nær null betyr at de er uavhengige. Dette erstatter\nlisteoverlapp, som er et styrkedrevet likhetsmål.\n")
-saveRDS(list(acute=ac, overlap=ov, m=m), file.path(OUT,"R1_05_acute_chronic.rds"))
+splith <- list(rho=mean(sh,na.rm=TRUE), ci=quantile(sh,c(.025,.975),na.rm=TRUE),
+               frac_neg=mean(sh<0,na.rm=TRUE), n_splits=NSPLIT,
+               rho_naive=rho_naive, rho_recovery=rho_recov, dist=sh)
+fwrite(data.table(metric=c("splithalf_rho","ci_lo","ci_hi","frac_negative",
+                           "naive_shared_B1","recovery_B3_B2"),
+                  value=c(splith$rho, splith$ci[1], splith$ci[2],
+                          splith$frac_neg, rho_naive, rho_recov)),
+       file.path(OUT,"R1_05_splithalf.csv"))
+
+saveRDS(list(acute=ac, overlap=ov, m=m, splithalf=splith), file.path(OUT,"R1_05_acute_chronic.rds"))

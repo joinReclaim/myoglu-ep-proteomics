@@ -1,0 +1,7 @@
+metric,value
+splithalf_rho,-0.413463393627831
+ci_lo,-0.649388843676199
+ci_hi,-0.0323290277975333
+frac_negative,0.982
+naive_shared_B1,-0.758373211228937
+recovery_B3_B2,0.573908954716223

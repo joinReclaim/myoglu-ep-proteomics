@@ -1,0 +1,115 @@
+universe,set,ontology,ID,Description,status,GeneRatio_acute,GeneRatio_chronic,Count_acute,Count_chronic,FE_acute,FE_chronic,q_acute,q_chronic
+common,all,BP,GO:0007155,cell adhesion,chronic only,8/31,47/124,8,47,1.31,1.92,0.609,0.00118
+common,all,CC,GO:0030312,external encapsulating structure,chronic only,7/32,31/125,7,31,2,2.27,0.774,0.000405
+common,all,CC,GO:0031012,extracellular matrix,chronic only,7/32,31/125,7,31,2.01,2.28,0.774,0.000405
+common,all,CC,GO:0009986,cell surface,chronic only,4/32,24/125,4,24,1.36,2.09,0.813,0.0189
+common,all,CC,GO:0062023,collagen-containing extracellular matrix,chronic only,6/32,24/125,6,24,1.95,2,0.774,0.0289
+common,down,BP,GO:0045931,positive regulation of mitotic cell cycle,chronic only,,5/51,,5,,12.64,,0.0297
+common,down,BP,GO:0007017,microtubule-based process,chronic only,,12/51,,12,,3.48,,0.0451
+common,down,BP,GO:0048285,organelle fission,chronic only,1/19,8/51,1,8,1.74,5.17,0.638,0.0451
+common,up,BP,GO:0007155,cell adhesion,chronic only,4/12,32/73,4,32,1.69,2.22,0.413,0.00175
+common,up,BP,GO:0009887,animal organ morphogenesis,chronic only,,14/73,,14,,3.63,,0.00365
+common,up,BP,GO:0030198,extracellular matrix organization,chronic only,1/12,12/73,1,12,2.11,4.16,0.521,0.00365
+common,up,BP,GO:0043062,extracellular structure organization,chronic only,1/12,12/73,1,12,2.11,4.16,0.521,0.00365
+common,up,BP,GO:0045229,external encapsulating structure organization,chronic only,1/12,12/73,1,12,2.11,4.16,0.521,0.00365
+common,up,BP,GO:0009653,anatomical structure morphogenesis,chronic only,4/12,32/73,4,32,1.51,1.99,0.458,0.00393
+common,up,BP,GO:0048513,animal organ development,chronic only,4/12,29/73,4,29,1.72,2.05,0.411,0.00516
+common,up,BP,GO:0048731,system development,chronic only,4/12,37/73,4,37,1.18,1.79,0.571,0.00516
+common,up,BP,GO:0035239,tube morphogenesis,chronic only,1/12,17/73,1,17,1.03,2.87,0.683,0.00529
+common,up,BP,GO:0070848,response to growth factor,chronic only,,15/73,,15,,3.07,,0.00646
+common,up,BP,GO:0072359,circulatory system development,chronic only,3/12,19/73,3,19,2.48,2.58,0.411,0.00646
+common,up,BP,GO:0016477,cell migration,chronic only,4/12,26/73,4,26,1.96,2.1,0.411,0.00746
+common,up,BP,GO:0060485,mesenchyme development,chronic only,,8/73,,8,,5.18,,0.00786
+common,up,BP,GO:0098742,cell-cell adhesion via plasma-membrane adhesion molecules,chronic only,,9/73,,9,,4.6,,0.00786
+common,up,BP,GO:0007275,multicellular organism development,chronic only,6/12,39/73,6,39,1.56,1.67,0.411,0.00786
+common,up,BP,GO:0090287,regulation of cellular response to growth factor stimulus,chronic only,,9/73,,9,,4.26,,0.0128
+common,up,BP,GO:0016339,calcium-dependent cell-cell adhesion via plasma membrane cell adhesion molecules,chronic only,,5/73,,5,,8.09,,0.0135
+common,up,BP,GO:0048870,cell motility,chronic only,4/12,26/73,4,26,1.85,1.97,0.411,0.0135
+common,up,BP,GO:0048514,blood vessel morphogenesis,chronic only,1/12,14/73,1,14,1.26,2.89,0.636,0.0135
+common,up,BP,GO:0001944,vasculature development,chronic only,1/12,15/73,1,15,1.11,2.75,0.663,0.0135
+common,up,BP,GO:0048762,mesenchymal cell differentiation,chronic only,,7/73,,7,,5.23,,0.0147
+common,up,BP,GO:0007166,cell surface receptor signaling pathway,chronic only,5/12,29/73,5,29,1.92,1.83,0.411,0.0156
+common,up,BP,GO:0035295,tube development,chronic only,2/12,17/73,2,17,1.76,2.46,0.478,0.0156
+common,up,BP,GO:0007156,homophilic cell adhesion via plasma membrane adhesion molecules,chronic only,,7/73,,7,,5.04,,0.0167
+common,up,BP,GO:0009888,tissue development,chronic only,3/12,22/73,3,22,1.71,2.06,0.454,0.021
+common,up,BP,GO:0007167,enzyme-linked receptor protein signaling pathway,chronic only,2/12,17/73,2,17,1.7,2.38,0.494,0.0216
+common,up,BP,GO:0001568,blood vessel development,chronic only,1/12,14/73,1,14,1.16,2.67,0.652,0.0225
+common,up,BP,GO:0071363,cellular response to growth factor stimulus,chronic only,,13/73,,13,,2.77,,0.0241
+common,up,BP,GO:0048646,anatomical structure formation involved in morphogenesis,chronic only,3/12,17/73,3,17,2.5,2.33,0.411,0.0251
+common,up,BP,GO:0001525,angiogenesis,chronic only,1/12,12/73,1,12,1.46,2.88,0.604,0.0272
+common,up,BP,GO:0050679,positive regulation of epithelial cell proliferation,chronic only,1/12,6/73,1,6,5.14,5.07,0.411,0.0352
+common,up,BP,GO:0035924,cellular response to vascular endothelial growth factor stimulus,chronic only,,5/73,,5,,6.07,,0.0373
+common,up,BP,GO:0048754,branching morphogenesis of an epithelial tube,chronic only,,5/73,,5,,6.07,,0.0373
+common,up,BP,GO:0007189,adenylate cyclase-activating G protein-coupled receptor signaling pathway,chronic only,1/12,5/73,1,5,7.39,6.07,0.411,0.0373
+common,up,BP,GO:0007188,adenylate cyclase-modulating G protein-coupled receptor signaling pathway,chronic only,1/12,6/73,1,6,4.92,4.86,0.411,0.0399
+common,up,CC,GO:0030312,external encapsulating structure,chronic only,1/12,29/74,1,29,0.76,3.58,0.805,5e-09
+common,up,CC,GO:0031012,extracellular matrix,chronic only,1/12,29/74,1,29,0.77,3.61,0.805,5e-09
+common,up,CC,GO:0062023,collagen-containing extracellular matrix,chronic only,1/12,23/74,1,23,0.87,3.23,0.771,5.44e-06
+common,up,CC,GO:0009986,cell surface,chronic only,,18/74,,18,,2.64,,0.00284
+common,up,CC,GO:0045177,apical part of cell,chronic only,1/12,8/74,1,8,2.74,3.55,0.482,0.0481
+common,up,KEGG,hsa05322,Systemic lupus erythematosus,acute only,3/9,,3,,14.52,,0.0385,
+common,up,KEGG,hsa04512,ECM-receptor interaction,chronic only,,7/38,,7,,5.11,,0.0211
+common,up,KEGG,hsa04518,Integrin signaling,chronic only,2/9,8/38,2,8,3.77,3.57,0.248,0.0482
+common,up,KEGG,hsa04670,Leukocyte transendothelial migration,acute only,4/9,3/38,4,3,12.32,2.19,0.015,0.818
+own,all,BP,GO:0007155,cell adhesion,chronic only universe,,48/126,,48,,1.96,,0.000465
+own,all,BP,GO:0034329,cell junction assembly,chronic only universe,,19/126,,19,,2.55,,0.0386
+own,all,BP,GO:0007166,cell surface receptor signaling pathway,chronic only universe,,44/126,,44,,1.66,,0.0386
+own,all,BP,GO:0030198,extracellular matrix organization,chronic only universe,,14/126,,14,,2.9,,0.0386
+own,all,BP,GO:0043062,extracellular structure organization,chronic only universe,,14/126,,14,,2.9,,0.0386
+own,all,BP,GO:0045229,external encapsulating structure organization,chronic only universe,,14/126,,14,,2.9,,0.0386
+own,all,BP,GO:0048754,branching morphogenesis of an epithelial tube,chronic only universe,,7/126,,7,,5.16,,0.0386
+own,all,BP,GO:0034330,cell junction organization,chronic only universe,,25/126,,25,,2.08,,0.0386
+own,all,BP,GO:0070848,response to growth factor,chronic only universe,,19/126,,19,,2.34,,0.0491
+own,all,CC,GO:0031012,extracellular matrix,chronic only universe,,32/127,,32,,2.42,,7.14e-05
+own,all,CC,GO:0030312,external encapsulating structure,chronic only universe,,32/127,,32,,2.4,,7.14e-05
+own,all,CC,GO:0062023,collagen-containing extracellular matrix,chronic only universe,,25/127,,25,,2.13,,0.00975
+own,all,CC,GO:0009986,cell surface,chronic only universe,,24/127,,24,,2.11,,0.0125
+own,down,BP,GO:0045931,positive regulation of mitotic cell cycle,chronic only universe,,5/51,,5,,12.15,,0.0398
+own,down,BP,GO:0007017,microtubule-based process,chronic only universe,,12/51,,12,,3.5,,0.046
+own,down,BP,GO:0048285,organelle fission,chronic only universe,,8/51,,8,,5.18,,0.046
+own,up,BP,GO:0007155,cell adhesion,chronic only universe,,33/75,,33,,2.26,,0.000722
+own,up,BP,GO:0030198,extracellular matrix organization,chronic only universe,,13/75,,13,,4.52,,0.000722
+own,up,BP,GO:0043062,extracellular structure organization,chronic only universe,,13/75,,13,,4.52,,0.000722
+own,up,BP,GO:0045229,external encapsulating structure organization,chronic only universe,,13/75,,13,,4.52,,0.000722
+own,up,BP,GO:0009887,animal organ morphogenesis,chronic only universe,,14/75,,14,,3.65,,0.00336
+own,up,BP,GO:0048513,animal organ development,chronic only universe,,30/75,,30,,2.07,,0.00358
+own,up,BP,GO:0072359,circulatory system development,chronic only universe,,20/75,,20,,2.68,,0.00358
+own,up,BP,GO:0009653,anatomical structure morphogenesis,chronic only universe,,32/75,,32,,1.97,,0.00358
+own,up,BP,GO:0048731,system development,chronic only universe,,38/75,,38,,1.79,,0.00358
+own,up,BP,GO:0035239,tube morphogenesis,chronic only universe,,17/75,,17,,2.86,,0.00537
+own,up,BP,GO:0070848,response to growth factor,chronic only universe,,15/75,,15,,3.1,,0.00574
+own,up,BP,GO:0098742,cell-cell adhesion via plasma-membrane adhesion molecules,chronic only universe,,9/75,,9,,4.7,,0.00764
+own,up,BP,GO:0060485,mesenchyme development,chronic only universe,,8/75,,8,,5.29,,0.00764
+own,up,BP,GO:0016477,cell migration,chronic only universe,,26/75,,26,,2.07,,0.00802
+own,up,BP,GO:0007275,multicellular organism development,chronic only universe,,40/75,,40,,1.66,,0.00802
+own,up,BP,GO:0090287,regulation of cellular response to growth factor stimulus,chronic only universe,,9/75,,9,,4.35,,0.0112
+own,up,BP,GO:0009888,tissue development,chronic only universe,,23/75,,23,,2.14,,0.0128
+own,up,BP,GO:0016339,calcium-dependent cell-cell adhesion via plasma membrane cell adhesion molecules,chronic only universe,,5/75,,5,,8.26,,0.0138
+own,up,BP,GO:0048762,mesenchymal cell differentiation,chronic only universe,,7/75,,7,,5.34,,0.0139
+own,up,BP,GO:0001944,vasculature development,chronic only universe,,15/75,,15,,2.73,,0.0139
+own,up,BP,GO:0048514,blood vessel morphogenesis,chronic only universe,,14/75,,14,,2.86,,0.0139
+own,up,BP,GO:0007166,cell surface receptor signaling pathway,chronic only universe,,29/75,,29,,1.84,,0.015
+own,up,BP,GO:0007156,homophilic cell adhesion via plasma membrane adhesion molecules,chronic only universe,,7/75,,7,,5.14,,0.015
+own,up,BP,GO:0048870,cell motility,chronic only universe,,26/75,,26,,1.95,,0.015
+own,up,BP,GO:0035295,tube development,chronic only universe,,17/75,,17,,2.46,,0.0151
+own,up,BP,GO:0007167,enzyme-linked receptor protein signaling pathway,chronic only universe,,17/75,,17,,2.39,,0.0208
+own,up,BP,GO:0071363,cellular response to growth factor stimulus,chronic only universe,,13/75,,13,,2.8,,0.0234
+own,up,BP,GO:0001568,blood vessel development,chronic only universe,,14/75,,14,,2.64,,0.0246
+own,up,BP,GO:0030199,collagen fibril organization,chronic only universe,,5/75,,5,,6.61,,0.0288
+own,up,BP,GO:0001525,angiogenesis,chronic only universe,,12/75,,12,,2.83,,0.031
+own,up,BP,GO:0048646,anatomical structure formation involved in morphogenesis,chronic only universe,,17/75,,17,,2.28,,0.031
+own,up,BP,GO:0050679,positive regulation of epithelial cell proliferation,chronic only universe,,6/75,,6,,5.17,,0.031
+own,up,BP,GO:0007189,adenylate cyclase-activating G protein-coupled receptor signaling pathway,chronic only universe,,5/75,,5,,6.2,,0.0333
+own,up,BP,GO:0035924,cellular response to vascular endothelial growth factor stimulus,chronic only universe,,5/75,,5,,6.2,,0.0333
+own,up,BP,GO:0048754,branching morphogenesis of an epithelial tube,chronic only universe,,5/75,,5,,6.2,,0.0333
+own,up,BP,GO:0007188,adenylate cyclase-modulating G protein-coupled receptor signaling pathway,chronic only universe,,6/75,,6,,4.96,,0.0352
+own,up,CC,GO:0031012,extracellular matrix,chronic only universe,,30/76,,30,,3.79,,6.04e-10
+own,up,CC,GO:0030312,external encapsulating structure,chronic only universe,,30/76,,30,,3.76,,6.04e-10
+own,up,CC,GO:0062023,collagen-containing extracellular matrix,chronic only universe,,24/76,,24,,3.42,,8.6e-07
+own,up,CC,GO:0009986,cell surface,chronic only universe,,18/76,,18,,2.64,,0.00298
+own,up,CC,GO:0045177,apical part of cell,chronic only universe,,8/76,,8,,3.55,,0.049
+own,up,KEGG,hsa04670,Leukocyte transendothelial migration,acute only universe,4/9,,4,,12.4,,0.0146,
+own,up,KEGG,hsa05322,Systemic lupus erythematosus,acute only universe,3/9,,3,,14.62,,0.0378,
+own,up,KEGG,hsa04974,Protein digestion and absorption,chronic only universe,,5/40,,5,,10.94,,0.0034
+own,up,KEGG,hsa04512,ECM-receptor interaction,chronic only universe,,7/40,,7,,5.11,,0.011
+own,up,KEGG,hsa04518,Integrin signaling,chronic only universe,,8/40,,8,,3.5,,0.0382

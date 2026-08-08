@@ -1,0 +1,18 @@
+scope,metric,numerator,denominator,numerator_what,denominator_what,value,percent,note
+all_significant,overlap / chronic,12,127,genes significant in BOTH,genes significant for 12-week training,0.0944881889763779,9.4,Answers: what fraction of long-term responders also respond acutely.
+all_significant,overlap / acute,12,36,genes significant in BOTH,genes significant for the acute bout,0.333333333333333,33.3,Answers: what fraction of acute responders also change over 12 weeks.
+all_significant,overlap / union,12,151,genes significant in BOTH,genes significant in EITHER analysis,0.0794701986754967,7.9,THIS IS THE DENOMINATOR USED IN THE SUBMITTED MANUSCRIPT (reported as 21.6%). It is not a proportion of responders; it equals the Jaccard index.
+all_significant,Jaccard,12,151,intersection,union,0.0794701986754967,7.9,Identical to overlap/union by definition; reported separately only because the manuscript labelled it as an overlap percentage.
+common_universe,overlap / chronic,12,125,genes significant in BOTH,chronic responders testable in both analyses,0.096,9.6,PRIMARY. Denominator excludes chronic responders that were not testable in the acute model and therefore could never enter the intersection.
+common_universe,overlap / acute,12,35,genes significant in BOTH,acute responders testable in both analyses,0.342857142857143,34.3,Reciprocal view of the same intersection.
+common_universe,overlap / union,12,148,genes significant in BOTH,genes significant in EITHER (universe-restricted),0.0810810810810811,8.1,Shown only to document what the erroneous denominator would be after re-analysis.
+common_universe,Jaccard,12,148,intersection,union,0.0810810810810811,8.1,Identical to overlap/union.
+universe,tested_chronic,1545,,genes tested in the 12-week model,,,,"R1_01_longterm_primary.csv, all rows"
+universe,tested_acute,1486,,genes tested in the acute model,,,,"R1_05_acute.csv, all rows"
+universe,tested_both,1473,,genes testable in BOTH models,,,,Hypergeometric universe. NOT the 2971 protein groups quantified.
+enrichment,expected_overlap,,,k*m/N under independence,,2.97012898845893,,"k=35 acute, m=125 chronic, N=1473"
+enrichment,fold_enrichment,12,,observed overlap,expected overlap,4.04022857142857,,observed / expected
+enrichment,hypergeometric_p,,,Pr(X >= observed),,1.28142649976009e-05,,"phyper(11, 125, 1348, 35, lower.tail=FALSE)"
+concordance,same_sign_B2,0,12,"same sign, chronic vs B2-B1",overlapping genes,0,0,binomial p = 1
+concordance,same_sign_B3,3,12,"same sign, chronic vs B3-B1",overlapping genes,0.25,25,binomial p = 0.981
+concordance,same_sign_B3_B2,12,12,"same sign, chronic vs B3-B2",overlapping genes,1,100,binomial p = 0.000244; only acute contrast sharing no term with chronic
