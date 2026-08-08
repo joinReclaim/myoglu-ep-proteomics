@@ -156,4 +156,6 @@ by the terms in the table above.
 
 Repository: https://github.com/joinReclaim/myoglu-ep-proteomics
 
-Archived at Zenodo: **DOI to be inserted on release**.
+Archived at Zenodo: **doi:10.5281/zenodo.21849646**
+
+This is the concept DOI; it always resolves to the most recent version.

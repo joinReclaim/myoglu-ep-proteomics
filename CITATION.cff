@@ -5,6 +5,7 @@ authors:
   - family-names: "Lee-Ødegård"
     given-names: "Sindre"
 license: MIT
+doi: "10.5281/zenodo.21849646"
 repository-code: "https://github.com/joinReclaim/myoglu-ep-proteomics"
 abstract: >-
   Analysis and figure code for a study of the plasma extracellular
