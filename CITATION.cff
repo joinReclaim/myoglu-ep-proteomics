@@ -5,6 +5,7 @@ authors:
   - family-names: "Lee-Ødegård"
     given-names: "Sindre"
 license: MIT
+repository-code: "https://github.com/joinReclaim/myoglu-ep-proteomics"
 preferred-citation:
   type: article
   title: "[manuscript title]"

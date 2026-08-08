@@ -6,7 +6,7 @@ Code and figure source data accompanying:
 > ProteomeXchange accession **PXD______**.
 
 This repository contains the full analysis for the revised manuscript: 22
-numbered scripts, the numeric input for every published figure panel, and the
+numbered scripts, the numeric source data behind the figure panels, and the
 vector figure files themselves.
 
 ---
@@ -14,7 +14,7 @@ vector figure files themselves.
 ## Quick start
 
 ```bash
-git clone <repository-url> && cd <repository>
+git clone https://github.com/joinReclaim/myoglu-ep-proteomics.git && cd myoglu-ep-proteomics
 
 export ECV_ROOT=$(pwd)
 export ECV_PHENO=/path/to/MyoGlu_pheno_2019-23-08.csv
@@ -43,8 +43,8 @@ it can. Individual scripts can also be run on their own, provided
 ```
 run_all.R                          entry point, run order
 review_round_1/01_scripts/         24 R scripts (22 analysis + config + theme)
-review_round_1/02_output/          27 CSVs — numeric source data for every panel
-review_round_1/03_figures/         22 PDFs — vector figure panels as produced by R
+review_round_1/02_output/          28 CSVs — numeric source data for the panels
+review_round_1/03_figures/         21 PDFs — vector figure panels as produced by R
 ```
 
 All paths are resolved in `01_scripts/R1_config.R` and can be overridden with
@@ -153,5 +153,7 @@ MIT — see `LICENSE`. The licence covers the code. Data availability is governe
 by the terms in the table above.
 
 ## Citation
+
+Repository: https://github.com/joinReclaim/myoglu-ep-proteomics
 
 Archived at Zenodo: **DOI to be inserted on release**.
