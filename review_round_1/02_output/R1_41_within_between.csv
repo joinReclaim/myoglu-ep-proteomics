@@ -1,0 +1,5 @@
+model,n_tested,n_fdr,n_up,n_down
+primaer  (batch),1545,127,76,51
+R1_39    (batch + pep samlet),1545,57,24,33
+kun innen-deltaker peptid,1545,58,25,33
+"uten batch, med splittet peptid",1545,46,22,24

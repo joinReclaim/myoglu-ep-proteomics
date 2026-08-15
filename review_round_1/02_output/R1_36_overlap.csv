@@ -13,6 +13,6 @@ universe,tested_both,1473,,genes testable in BOTH models,,,,Hypergeometric unive
 enrichment,expected_overlap,,,k*m/N under independence,,2.97012898845893,,"k=35 acute, m=125 chronic, N=1473"
 enrichment,fold_enrichment,12,,observed overlap,expected overlap,4.04022857142857,,observed / expected
 enrichment,hypergeometric_p,,,Pr(X >= observed),,1.28142649976009e-05,,"phyper(11, 125, 1348, 35, lower.tail=FALSE)"
-concordance,same_sign_B2,0,12,"same sign, chronic vs B2-B1",overlapping genes,0,0,binomial p = 1
-concordance,same_sign_B3,3,12,"same sign, chronic vs B3-B1",overlapping genes,0.25,25,binomial p = 0.981
-concordance,same_sign_B3_B2,12,12,"same sign, chronic vs B3-B2",overlapping genes,1,100,binomial p = 0.000244; only acute contrast sharing no term with chronic
+concordance,same_sign_B2,0,12,"same sign, chronic vs B2-B1",overlapping genes,0,0,p = 1 mot empirisk bakgrunnsrate 0.009 (IKKE mot 50%)
+concordance,same_sign_B3,3,12,"same sign, chronic vs B3-B1",overlapping genes,0.25,25,p = 0.516 mot empirisk bakgrunnsrate 0.221 (IKKE mot 50%)
+concordance,same_sign_B3_B2,12,12,"same sign, chronic vs B3-B2",overlapping genes,1,100,"p = 0.329 mot empirisk bakgrunnsrate 0.912. B3-B2 deler ingen maaling med kronisk, men maaler RECOVERY, ikke akuttrespons - se R1_05 split-half (rho = -0.41)"

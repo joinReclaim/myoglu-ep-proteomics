@@ -35,7 +35,9 @@ plasma_ids <- as.integer(strsplit(readLines(
 cat(sprintf("Vesiclepedia 5.1: %d rader | humane plasma-eksperimenter: %d\n",
             nrow(VP), length(plasma_ids)))
 
-hum <- VP[SPECIES == "Homo sapiens" & CONTENT.TYPE == "protein"]
+# NB: CONTENT TYPE finnes som "protein", "Protein" og "protein " (mellomrom).
+# Et likhetsfilter paa "protein" dropper 26 % av radene.
+hum <- VP[SPECIES == "Homo sapiens" & tolower(trimws(CONTENT.TYPE)) == "protein"]
 any_src <- unique(toupper(hum$GENE.SYMBOL))
 plasma  <- unique(toupper(hum[EXPERIMENT.ID %in% plasma_ids]$GENE.SYMBOL))
 cat(sprintf("unike gensymboler: alle kilder %d | kun plasma %d\n",

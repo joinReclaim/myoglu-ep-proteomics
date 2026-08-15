@@ -211,17 +211,23 @@ EXTRA <- rbindlist(list(
   data.table(scope = "concordance", metric = "same_sign_B2", numerator = conc$n_same_sign[1],
              denominator = conc$n_overlap[1], numerator_what = "same sign, chronic vs B2-B1",
              denominator_what = "overlapping genes", value = conc$n_same_sign[1]/conc$n_overlap[1],
-             percent = conc$percent[1], note = sprintf("binomial p = %.3g", conc$p_binom[1])),
+             percent = conc$percent[1],
+             note = sprintf("p = %.3g mot empirisk bakgrunnsrate %.3f (IKKE mot 50%%)",
+                            conc$p_vs_bg[1], conc$bg_rate[1])),
   data.table(scope = "concordance", metric = "same_sign_B3", numerator = conc$n_same_sign[2],
              denominator = conc$n_overlap[2], numerator_what = "same sign, chronic vs B3-B1",
              denominator_what = "overlapping genes", value = conc$n_same_sign[2]/conc$n_overlap[2],
-             percent = conc$percent[2], note = sprintf("binomial p = %.3g", conc$p_binom[2])),
+             percent = conc$percent[2],
+             note = sprintf("p = %.3g mot empirisk bakgrunnsrate %.3f (IKKE mot 50%%)",
+                            conc$p_vs_bg[2], conc$bg_rate[2])),
   data.table(scope = "concordance", metric = "same_sign_B3_B2", numerator = conc$n_same_sign[3],
              denominator = conc$n_overlap[3], numerator_what = "same sign, chronic vs B3-B2",
              denominator_what = "overlapping genes", value = conc$n_same_sign[3]/conc$n_overlap[3],
              percent = conc$percent[3],
-             note = sprintf("binomial p = %.3g; only acute contrast sharing no term with chronic",
-                            conc$p_binom[3]))
+             note = sprintf(paste0("p = %.3g mot empirisk bakgrunnsrate %.3f. B3-B2 deler ",
+                                   "ingen maaling med kronisk, men maaler RECOVERY, ikke ",
+                                   "akuttrespons - se R1_05 split-half (rho = -0.41)"),
+                            conc$p_vs_bg[3], conc$bg_rate[3]))
 ))
 OUTTAB <- rbind(RES, EXTRA)
 fwrite(OUTTAB, file.path(OUT, "R1_36_overlap.csv"))

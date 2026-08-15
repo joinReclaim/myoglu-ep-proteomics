@@ -1,0 +1,2 @@
+model,n_samples,n_participants,n_correct,accuracy,binom_p
+"four blocks, uncentred, LOSO by participant",48,24,44,0.9167,1.51383261481897e-09

@@ -88,7 +88,7 @@ d[, Time  := factor(Time, levels = c("Baseline","Post-training"))]
 d[, Gr    := factor(Gr, levels = c("Overweight","Control"))]
 
 # kildedata for panel A, til kodedeponeringen. To komponentskårer per deltaker
-# per blokk, subjekt-sentrert og komprimert fra 500 features — ingenting lar seg
+# per blokk, komprimert fra 500 features til to komponenter — ingenting lar seg
 # rekonstruere. Deltakerkoden er den samme som i ProteomeXchange-mappingen.
 # Panel B deponeres IKKE: der er radene enkeltfeatures fra Olink og RNA-seq.
 fwrite(d[, .(subject_id = sprintf("MyoGlu_%03d", ID2), timepoint = Time,

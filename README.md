@@ -5,7 +5,7 @@ Code and figure source data accompanying:
 > Lee-Ødegård S, *et al.* *[title]*. **Cardiovascular Diabetology** (submitted).
 > ProteomeXchange accession **PXD______**.
 
-This repository contains the full analysis for the revised manuscript: 22
+This repository contains the full analysis for the revised manuscript: 32
 numbered scripts, the numeric source data behind the figure panels, and the
 vector figure files themselves.
 
@@ -42,9 +42,9 @@ it can. Individual scripts can also be run on their own, provided
 
 ```
 run_all.R                          entry point, run order
-review_round_1/01_scripts/         24 R scripts (22 analysis + config + theme)
-review_round_1/02_output/          28 CSVs — numeric source data for the panels
-review_round_1/03_figures/         21 PDFs — vector figure panels as produced by R
+review_round_1/01_scripts/         34 R scripts (32 analysis + config + theme)
+review_round_1/02_output/          44 files — numeric source data for the panels
+review_round_1/03_figures/         26 PDFs — vector figure panels as produced by R
 ```
 
 All paths are resolved in `01_scripts/R1_config.R` and can be overridden with
@@ -71,16 +71,29 @@ shared on request within those limits.
 `review_round_1/02_output/` exists precisely so this does not block anyone: it
 holds the numeric values behind the figure panels, so they can be reproduced or
 redrawn without access to individual-level data. **No file in this repository
-contains clinical phenotype data.** With one exception, noted below, every file
+contains participant-level clinical measurements.** Three files carry
+participant- or group-level information and are described below; every other file
 is aggregate — one row per protein, pathway or cluster.
 
-### Two panels whose source data is not deposited
+### The three files that are not aggregated by protein
 
-`R1_27_fig8A_scores.csv` is the one participant-level file: two latent-variable
-scores per participant, timepoint and block. They are subject-centred
-projections of 500 features onto two components, from which nothing can be
-reconstructed, so the panel can be redrawn by anyone. The participant codes match
-those in the ProteomeXchange deposit.
+`R1_27_fig8A_scores.csv` holds two latent-variable scores per participant,
+timepoint and block, together with group membership. The scores are projections
+of 500 features onto two components, from which nothing can be reconstructed, so
+the panel can be redrawn by anyone.
+
+`R1_34_participant_characteristics.csv` reports group means and standard
+deviations, not individual values.
+
+`R1_33_qc_per_sample.csv` reports technical quality metrics per injection —
+identification depth, intensity, peptide concentration, plate, well, run order
+and batch — alongside participant code, timepoint and group.
+
+Group membership is a body-mass-index classification and is reported as such. No
+clinical measurement is given for any individual participant. The participant
+codes match those in the ProteomeXchange deposit.
+
+### Two panels whose source data is not deposited
 
 Two panels cannot be supported this way:
 
@@ -124,8 +137,9 @@ completeness combinations; the sensitivity table is printed by
 
 ## Not included
 
-Seven scripts that draw on a second, as yet unpublished cohort are withheld
-until that study is published. They support a cross-platform methodological
+Eight scripts are withheld. Seven draw on a second, as yet unpublished cohort
+and are withheld until that study is published; the eighth (R1_38) was superseded
+by R1_40 and is omitted to avoid depositing a superseded analysis. They support a cross-platform methodological
 comparison discussed in the response to reviewers and underpin no result
 reported in the manuscript; their absence does not affect reproducibility of
 anything here.
